@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Youtube Video Downloader!</title>
+	<link rel= "stylesheet" type= "text/css" href= "main.css">
+	<link rel="icon" href="images.jpg">
+	<script type="text/javascript" src="main.js"></script>
+</head>
+
+<body>
+	<hr />
+
+
+	{% if eval==1: %}
+	<script>
+		alert("Invalid URL or Video isn't avialable to be downloaded!");
+	</script>
+	{% endif %}
+
+	<div id="titl">
+		The Youtube Video Downloader
+	</div>
+	<hr />
+
+	<div id="lside"></div>
+	<div id="rside"></div>
+
+	<div id="face">Hi Youtuber!</div>
+	<div id="tag">- A Python based Application.</div>
+
+	<div id="urlform">
+		<form action='http://127.0.0.1:5000/work' method='POST'>
+			Enter the Url to download from: <input type="text" style="font-size:10pt;height:23px" name="url" value=" Enter the URL here" size="95">
+			<input type="Submit" style="font-size:13pt;height:24px" value="Submit">
+		</form>
+	</div>
+
+	<div id="instr">
+		<p>1)Enter the url of the video in the above url form.<br/><br/>
+			2)Hit the Submit Button to view and select among all the available formats of the video.<br/><br/>
+			3)After you hit the "Submit button", Choose the format that you want from the list that would appear.<br/><br/>
+			4)Hit "Download" button and there you go!
+		</p>
+
+	</div>
+
+	<div id="designer">Designed by: Akshay Singh Raghav <br/> Electronics Undergrad, N.I.T. Jalandhar. <br/> E-mail: akshaysr.ec.14@nitj.ac.in</div>
+
+</body>
+</html>
